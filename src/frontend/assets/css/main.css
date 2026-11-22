@@ -5,7 +5,9 @@
 }
 
 :root {
-  --app-font-family: "Alimama", system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  --app-font-family:
+    "Alimama", system-ui, -apple-system, "Segoe UI", "Microsoft YaHei",
+    sans-serif;
   --surface: #ffffff;
   --background: #f7f7f8;
   --elevated: #ffffff;
@@ -40,8 +42,14 @@
   color-scheme: dark;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+* {
+  transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -49,7 +57,10 @@ body {
   font-size: 14px;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font: inherit;
 }
 
@@ -66,6 +77,8 @@ a:hover {
   outline-offset: 3px;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
