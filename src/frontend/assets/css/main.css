@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Alimama";
+  src: url("https://cdn.chilo.top/standard/alimama.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --app-font-family: "Alimama", system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  --surface: #ffffff;
+  --background: #f7f7f8;
+  --elevated: #ffffff;
+  --hover: #f0f0f3;
+  --selected: #ededf7;
+  --accent: #6965b9;
+  --accent-hover: #807bc9;
+  --accent-active: #5955a6;
+  --text: #303036;
+  --muted: #72727e;
+  --disabled: #9999a3;
+  --border: #e5e5e9;
+  color: var(--text);
+  background: var(--background);
+  color-scheme: light;
+  font-family: var(--app-font-family);
+}
+
+:root[data-theme="dark"] {
+  --surface: #242427;
+  --background: #202023;
+  --elevated: #2a2a2e;
+  --hover: #303035;
+  --selected: #34323f;
+  --accent: #b0a9df;
+  --accent-hover: #c3bdeb;
+  --accent-active: #9b92cf;
+  --text: #dedee3;
+  --muted: #a2a2ae;
+  --disabled: #74747f;
+  --border: #39393f;
+  color-scheme: dark;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+h1, h2, p {
+  margin: 0;
+}
